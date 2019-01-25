@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+    <title>Mon Portfolio</title>
+</head>
+
+<body>
+
+
+
+    <!--Header-->
+    <div class="block">
+        <header class="header">
+            <a href="#" class="header-logo">Mon portfolio</a>
+            <nav class="header-menu">
+                <a href="#">Acceuil</a>
+                <a href="#">À propos</a>
+                <a href="#">Mes traveau</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+    </div>
+    <!--Header-->
+    <!---Banner-->
+    <div class="block">
+        <div class="banner">
+            <img src="src/img/bg.jpg" alt="ordi de travail" class="banner-image">
+            <div class="banner-content">
+                <h1 class="title is-1">Bienvenu sur mon portfolio</h1>
+                <h2 class="subtitle">Décourez mes travaux et mon univers !</h2>
+                <button class="button is-link" id="open_modal">Contatez-moi !</button>
+            </div>
+        </div>
+    </div>
+    <!---Banner-->
+    <!---Modal-->
+    <div class="modal own_modal" id="modal_to_open">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Modal title</p>
+                <button class="delete" aria-label="close" id="close_modal"></button>
+            </header>
+            <section class="modal-card-body">
+                <p>Le contenu de mon modal :</p>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-link">Save changes</button>
+
+            </footer>
+        </div>
+    </div>
+    <!--Modal-->
+    <!--Section à propos-->
+    <div class="block">
+        <h2 class="subtitle heading-site">À Propos</h2>
+        <div class="container about">
+            <div class="columns">
+                <div class="column about-single-element">
+                    <i class="fas fa-code icon"></i>
+                    <p>
+                        Auxerunt haec vulgi sordidioris audaciam, quod cum ingravesceret penuria commeatuum, famis et
+                        furoris inpulsu Eubuli cuiusdam inter suos clari domum ambitiosam ignibus subditis inflammavit
+                        rectoremque ut sibi iudicio i</p>
+                </div>
+                <div class="column about-single-element">
+                    <i class="fas fa-coffee icon"></i>
+                    <p>
+                        seminecem laniatu miserando discerpsit. post cuius lacrimosum interitum in unius exitio quisque
+                        imaginem periculi sui considerans documento recenti similia formidabat.</p>
+                </div>
+                <div class="column about-single-element">
+                    <i class="fas fa-pencil-alt icon"></i>
+                    <p>
+                        Eubuli cuiusdam inter suos clari domum ambitiosam ignibus subditis inflammavit rectoremque ut
+                        sibi iudicio imperiali addictum calcibus incessens et pugnis conculcans </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Section àpropos-->
+    <!---Portfolio-->
+    <div class="block">
+        <h2 class="subtitle heading-site">Mon portfolio</h2>
+        <div class="tile is-ancestor">
+            <div class="tile is-vertical is-8">
+                <div class="tile">
+                    <div class="tile is-parent is-vertical">
+                        <article class="tile is-child notification is-primary">
+                            <p class="title">Menu</p>
+                            <p class="subtitle">Non déroulant</p>
+                            <img src="src/img/3.png" alt="">
+                        </article>
+                        <article class="tile is-child notification is-warning">
+                            <p class="title">Menu</p>
+                            <p class="subtitle">Déroulant</p>
+                            <img src="src/img/4.png" alt="">
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-info">
+                            <p class="title">Page web</p>
+                            <p class="subtitle">PSD</p>
+                            <img src="src/img/2.png">
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child notification is-success">
+                    <div class="content">
+                        <p class="title">PSD to HTML CSS JQuery</p>
+                        <img src="src/img/1.png" alt="">
+                        <div class="content">
+                            <!-- Content -->
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+    <!---Portfolio-->
+    <!---Contact-->
+    <div class="block">
+        <footer class="footer">
+            <h2 class="heading-site">Contactez-moi !</h2>
+            <div class="footer-contact-form">
+                <form>
+                    <div class="field">
+                        <label class="label">Votre nom</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="e.g Alex Smith">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Votre prénom</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="e.g Alex Smith">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Votre mail</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="e.g Alex Smith">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Votre message</label>
+                        <div class="control">
+                            <textarea class="textarea" placeholder="e.g. Hello world"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </footer>
+    </div>
+    <!---Contact-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="src/js/main.js"></script>
+</body>
+
+</html>
